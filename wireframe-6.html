@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe-6</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatable-header.css">
+    <link rel="stylesheet" href="css/jquery-datatable.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/select-2.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <main class="px-2">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center main-header pb-3">
+            <h3 class="section-title">Expense Details</h3>
+        </div>
+        <div class="accordion mb-5" id="expenseDetails">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empDetails">Employee Details</button>									
+                </h2>
+                <div id="empDetails" class="accordion-collapse collapse" data-bs-parent="#expenseDetails">
+                    <div class="accordion-body pt-1">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Employee ID</h6>
+                                    <p class="emp-subtitle">abuzar_q2t</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Email</h6>
+                                    <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Employee Name</h6>
+                                    <p class="emp-subtitle">Mr. Abuzar Khan</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Phone No.</h6>
+                                    <p class="emp-subtitle">7208593361</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Grade</h6>
+                                    <p class="emp-subtitle">B1</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Travel Request No.</h6>
+                                    <p class="emp-subtitle">NA</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <h6 class="emp-title">Cost Center</h6>
+                                <p class="emp-subtitle">NA / NA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#claimDetails">Claim Details</button>
+                </h2>
+                <div id="claimDetails" class="accordion-collapse collapse" data-bs-parent="#expenseDetails">
+                    <div class="accordion-body pt-1">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Employee ID</h6>
+                                    <p class="emp-subtitle">abuzar_q2t</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Email</h6>
+                                    <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Email</h6>
+                                    <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Employee Name</h6>
+                                    <p class="emp-subtitle">Mr. Abuzar Khan</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Phone No.</h6>
+                                    <p class="emp-subtitle">7208593361</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Phone No.</h6>
+                                    <p class="emp-subtitle">7208593361</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Grade</h6>
+                                    <p class="emp-subtitle">B1</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="emp-title">Travel Request No.</h6>
+                                    <p class="emp-subtitle">NA</p>
+                                </div>
+                                <div class="mb-lg-0 mb-3">
+                                    <h6 class="emp-title">Travel Request No.</h6>
+                                    <p class="emp-subtitle">NA</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <h6 class="emp-title">Cost Center</h6>
+                                <p class="emp-subtitle">NA / NA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-title mb-4">Currency Details</h3>
+        <div class="accordion mb-3" id="currencyDetails">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#curDetailsItem">Currency Details</button>									
+                </h2>
+                <div id="curDetailsItem" class="accordion-collapse collapse" data-bs-parent="#currencyDetails">
+                    <div class="accordion-body">
+                        <div class="row mb-3">
+                            <div class="col-xl-6 mb-0 mb-sm-3">
+                                <div class="row cur-b-list">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Currency Type</h6>
+                                        <p class="emp-subtitle">Indian Rupee <strong>&#x20B9;</strong></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Opening Balance</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 cur-b-list-item total">
+                                        <h6 class="emp-title">Amount Converted (Total Outgoings)</h6>
+                                        <p class="emp-subtitle">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row cur-b-list flex-row-reverse flex-xl-row">
+                                    <div class="col-xl-5 col-sm-6 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Amount Expensed (In Cash)</h6>
+                                        <p class="emp-subtitle">2,33,532</p>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-3 mb-3 mb-sm-0 cur-b-list-item total">
+                                        <h6 class="emp-title">Total Available</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Amount Refunded</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 mb-0 mb-sm-3">
+                                <div class="row cur-b-list">
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Currency Type</h6>
+                                        <p class="emp-subtitle font-15">Canadian Dollar C<strong>$</strong></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Opening Balance</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0 cur-b-list-item total">
+                                        <h6 class="emp-title">Amount Converted (Total Outgoings)</h6>
+                                        <p class="emp-subtitle">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row cur-b-list flex-row-reverse flex-xl-row">
+                                    <div class="col-xl-5 col-sm-6 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Amount Expensed (In Cash)</h6>
+                                        <p class="emp-subtitle">2,33,532</p>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-3 mb-3 mb-sm-0 cur-b-list-item total">
+                                        <h6 class="emp-title">Total Available</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                                        <h6 class="emp-title">Amount Refunded</h6>
+                                        <p class="emp-subtitle">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="row mb-4">
+            <div class="col-lg-3 mb-3">
+                <label for="selectCurrency" class="form-label">Select Currency</label>
+                <div class="single-select">
+                    <select class="form-select basic-single" style="width: 100%;">
+                      <option selected>Indian Rupees &#x20B9;</option>
+                      <option value="Indian Rupees">Indian Rupees ( &#x20B9;  )</option>
+                      <option value="Canadian Dollar">Canadian Dollar ( ¢$   )</option>
+                    </select>
+                </div>
+            </div>
+            <div class="align-self-center col-lg-9 mt-2">
+                <div class="d-flex flex-wrap gap-3 justify-content-start ">
+                    <button type="button" class="btn btn-primary btn-currency" data-bs-toggle="modal" data-bs-target="#currencyConverter" role="button">Currency Converter</button>
+                    <button type="button" class="btn btn-primary btn-currency" data-bs-toggle="modal" data-bs-target="#addCardDetails" role="button">Add / Edit Card</button>
+                    <button type="button" class="btn btn-primary btn-currency" data-bs-toggle="modal" data-bs-target="#addCurrency" role="button">ADD Currency</button>
+                    <button type="button" class="btn btn-primary btn-currency">Add currency from forex</button>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-xl-6 mb-0 mb-sm-3">
+                <div class="row cur-b-list">
+                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                        <h6 class="emp-title">Opening Balance</h6>
+                        <p class="emp-subtitle">0</p>
+                    </div>
+                    <div class="col-sm-6 mb-3 mb-sm-0 cur-b-list-item">
+                        <h6 class="emp-title">Amount Converted (Total Outgoings)</h6>
+                        <p class="emp-subtitle">-</p>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0 cur-b-list-item total">
+                        <h6 class="emp-title">Total Available</h6>
+                        <p class="emp-subtitle">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="row cur-b-list">
+                    <div class="col-xl-5 order-sm-1 col-sm-6 mb-3 mb-sm-0 cur-b-list-item">
+                        <h6 class="emp-title">Amount Expensed (In Cash)</h6>
+                        <p class="emp-subtitle">2,33,532</p>
+                    </div>
+                    <div class="col-xl-4 col-sm-3 mb-3 mb-sm-0 cur-b-list-item">
+                        <h6 class="emp-title">Amount Refunded</h6>
+                        <p class="emp-subtitle">0</p>
+                    </div>
+                    <div class="col-sm-3 order-sm-2 mb-3 mb-sm-0 align-self-end cur-b-list-item">
+                        <a id="viewDetails" class="view-details" role="button"><i class="far fa-eye me-2"></i>View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <hr class="hr-line">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="expenseTitle" class="form-label">Expense Category</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Expense Category</option>
+                          <option value="Expense Category 1">Expense Category 1</option>
+                          <option value="Expense Category 2">Expense Category 2</option>
+                          <option value="Expense Category 3">Expense Category 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="country" class="form-label">Nature of Visit</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Nature of Visit</option>
+                          <option value="Nature of Visit 1">Nature of Visit 1</option>
+                          <option value="Nature of Visit 2">Nature of Visit 2</option>
+                          <option value="Nature of Visit 3">Nature of Visit 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="startCity" class="form-label">Mode of Payment</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Mode of Payment</option>
+                          <option value="Mode of Payment 1">Mode of Payment 1</option>
+                          <option value="Mode of Payment 2">Mode of Payment 2</option>
+                          <option value="Mode of Payment 3">Mode of Payment 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="destinationCity" class="form-label">Amount Expensed</label>
+                    <input type="text" class="form-control" id="destinationCity">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="startDate" class="form-label">Start Date</label>
+                    <div class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="startDate" value="07/01/2023">
+                        <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="endDate" class="form-label">End Date</label>
+                    <div class="d-flex align-items-center">
+                        <input type="text" class="form-control" id="endDate" value="07/01/2023">
+                        <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="country" class="form-label">State</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Select State</option>
+                          <option value="State 1">Maharashtra</option>
+                          <option value="State 2">Gujrat</option>
+                          <option value="State 3">MP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="country" class="form-label">City</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Select City</option>
+                          <option value="city 1">Pune</option>
+                          <option value="city 2">Mumbai</option>
+                          <option value="city 3">Nagpur</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="taxRates" class="form-label">Tax Rates</label>
+                    <input type="text" class="form-control" id="taxRates">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="CGST" class="form-label">CGST</label>
+                    <input type="text" class="form-control" id="CGST">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="SGST" class="form-label">SGST</label>
+                    <input type="text" class="form-control" id="SGST">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="hotelGST" class="form-label">Hotel GST No.</label>
+                    <input type="text" class="form-control" id="hotelGST">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="hotelName" class="form-label">Hotel Name</label>
+                    <input type="text" class="form-control" id="hotelName">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="billFile" class="form-label">Upload Bill</label>
+                    <input type="file" id="billFile" class="custom w-100">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="billFile" class="form-label">Upload Bill</label>
+                    <input type="file" id="billFile" class="custom w-100">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="mb-3">
+                    <label for="billFile" class="form-label">Upload Bill</label>
+                    <input type="file" id="billFile" class="custom w-100">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-12">
+               <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control h-100" id="description" rows="2"></textarea>
+               </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center my-4">
+            <button class="btn btn-primary me-2">Save</button>
+            <button class="btn btn-secondary">Back</button>
+        </div>
+
+        <div class="view-details-table">
+            <div class="row mb-4 pt-3">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table id="showNormalTable" class="display" cellspacing="0" width="100%">
+                            <thead>
+                              <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Sub-Category</th>
+                                <th scope="col">Mode of Payment</th>
+                                <th scope="col">Expense Date</th>
+                                <th scope="col">Expenditure in Currency</th>
+                                <th scope="col">Currency Conversion</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Allowance</td>
+                                <td>Daily Allowance</td>
+                                <td>Cash</td>
+                                <td>NA</td>
+                                <td>C$ 0</td>
+                                <td>&#x20B9; 0</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button class="btn btn-with-icon me-2"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="far fa-edit"></i></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Other</td>
+                                <td>Gifts</td>
+                                <td>Cash</td>
+                                <td>03 Jan 2023</td>
+                                <td>&#x20B9; 2,33,232</td>
+                                <td>&#x20B9; 2,33,232</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button class="btn btn-with-icon me-2"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="far fa-edit"></i></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Other</td>
+                                <td>Transaction Fees</td>
+                                <td>Cash</td>
+                                <td>04 Jan 2023</td>
+                                <td>&#x20B9; 3.64</td>
+                                <td>&#x20B9; 300</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button class="btn btn-with-icon me-2"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="far fa-edit"></i></button>
+                                        <button class="btn btn-with-icon me-2 text-white"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="total-amount mb-0">Total Amount : <span>2,33,532</span></h5>
+                    <p class="authorization mb-0">Your authorization request will be sent to <span>Mrs. Vrushali Pagrut</span></p>
+                    <div class="align-items-center d-flex flex-wrap mb-5 mt-4">
+                        <button class="btn btn-primary me-2 mb-2">submit</button>
+                        <button class="btn btn-secondary">view all claims</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </main>
+
+<div class="modal fade" id="currencyConverter" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title section-title" id="exampleModalToggleLabel">Currency Converter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="form-check form-check-inline btnCurConverter">
+                        <input class="form-check-input" type="radio" name="curConverter" id="curConverter" value="curConverter" checked>
+                        <label class="form-check-label" for="curConverter">Currency Converter Details</label>
+                      </div>
+                      <div class="form-check form-check-inline btnCurConverterOther">
+                        <input class="form-check-input" type="radio" name="curConverter" id="curConverterOther" value="curConverterOther">
+                        <label class="form-check-label" for="curConverterOther">Currency from Other Countries</label>
+                      </div>
+                </div>
+            </div>
+            <div class="curConverter">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="convert" class="form-label">Convert</label>
+                                    <input type="text" class="form-control" id="convert" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <!-- <label for="convert" class="form-label">Convert</label> -->
+                                    <div class="single-select input-full-width input-text-wrap">
+                                        <select class="form-select basic-single">
+                                          <option selected>Convert</option>
+                                          <option value="Convert 1">Convert 1</option>
+                                          <option value="Convert 2">Convert 2</option>
+                                          <option value="Convert 3">Convert 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="convertTo" class="form-label">To</label>
+                                    <input type="text" class="form-control" id="convertTo" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <!-- <label for="convert" class="form-label">Convert</label> -->
+                                    <div class="single-select input-full-width input-text-wrap">
+                                        <select class="form-select basic-single">
+                                          <option selected>Convert</option>
+                                          <option value="Convert 1">Convert 1</option>
+                                          <option value="Convert 2">Convert 2</option>
+                                          <option value="Convert 3">Convert 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="conversionDate" class="form-label">Conversion Date</label>
+                            <div class="d-flex align-items-center">
+                                <input type="text" class="form-control" id="conversionDate" value="07/01/2023">
+                                <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="note" class="form-label">Note</label>
+                        <input type="text" class="form-control" id="note">
+                    </div>
+                    <div class="col-md-12 mt-3 mb-4">
+                        <button class="btn btn-primary">ADD</button>
+                    </div>
+                    <div class="col-12 mb-4 pt-2">
+                        <div class="conversion-card">
+                            <div class="conversion-card-header">
+                                  <div class="conversion-card-header-title">
+                                    Following are the currency conversion made for this trip
+                                  </div>
+                            </div>
+                            <div class="conversion-card-body">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="curConverterOther">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="convert" class="form-label">Convert</label>
+                                    <input type="text" class="form-control" id="convert" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <!-- <label for="convert" class="form-label">Convert</label> -->
+                                    <div class="single-select input-full-width input-text-wrap">
+                                        <select class="form-select basic-single">
+                                          <option selected>--select--</option>
+                                          <option value="Convert 1">Convert 1</option>
+                                          <option value="Convert 2">Convert 2</option>
+                                          <option value="Convert 3">Convert 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row align-items-end">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="convertTo" class="form-label">Mode</label>
+                                    <input type="text" class="form-control" id="convertTo" placeholder="(INR) Exchange Rate">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <!-- <label for="convert" class="form-label">Convert</label> -->
+                                    <div class="single-select input-full-width input-text-wrap">
+                                        <select class="form-select basic-single">
+                                          <option selected>--select--</option>
+                                          <option value="Convert 1">Convert 1</option>
+                                          <option value="Convert 2">Convert 2</option>
+                                          <option value="Convert 3">Convert 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="conversionDate" class="form-label">Conversion Date</label>
+                            <div class="d-flex align-items-center">
+                                <input type="text" class="form-control" id="conversionDate" value="07/01/2023">
+                                <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="note" class="form-label">Note</label>
+                        <input type="text" class="form-control" id="note">
+                    </div>
+                    <div class="col-md-12 mt-3 mb-4">
+                        <button class="btn btn-primary">Add</button>
+                    </div>
+                    <div class="col-12 mb-4 pt-2">
+                        <div class="conversion-card">
+                            <div class="conversion-card-header">
+                                  <div class="conversion-card-header-title">
+                                    Following are the currency conversion made for this trip
+                                  </div>
+                            </div>
+                            <div class="conversion-card-body">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addCardDetails" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title section-title" id="exampleModalToggleLabel">Card Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <div class="row align-items-end">
+            <div class="col-md-6 mb-3">
+                <label for="brandOfCard" class="form-label">Brand of Card</label>
+                <div class="single-select input-full-width input-text-wrap">
+                    <select class="form-select basic-single">
+                    <option selected>Brand of Card</option>
+                    <option value="Brand of Card 1">Brand of Card 1</option>
+                    <option value="Brand of Card 2">Brand of Card 2 </option>
+                    <option value="Brand of Card 3">Brand of Card 3 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="brandOfCard" class="form-label">Settled By</label>
+                <div class="single-select input-full-width input-text-wrap">
+                    <select class="form-select basic-single">
+                    <option selected>Settled By</option>
+                    <option value="Settled By 1">Settled By 1</option>
+                    <option value="Settled By 2">Settled By 2 </option>
+                    <option value="Settled By 3">Settled By 3 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="brandOfCard" class="form-label">Type of Card</label>
+                <div class="single-select input-full-width input-text-wrap">
+                    <select class="form-select basic-single">
+                    <option selected>Type of Card</option>
+                    <option value="Type of Card 1">Type of Card 1</option>
+                    <option value="Type of Card 2">Type of Card 2 </option>
+                    <option value="Type of Card 3">Type of Card 3 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="displayName" class="form-label">Display Name</label>
+                    <input type="text" class="form-control" id="displayName">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="nameOfIssuer" class="form-label">Name of Issuer</label>
+                    <input type="text" class="form-control" id="nameOfIssuer">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Card Number</label>
+                    <input type="text" placeholder="First Four Digit" class="form-control" id="cardNumber">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <!-- <label for="cardNumber" class="form-label">Card Number</label> -->
+                    <input type="text" placeholder="Last Four Digit" class="form-control" id="cardNumber">
+                </div>
+            </div>
+            <div class="col-md-12 my-4">
+                <button class="btn btn-primary">Add</button>
+            </div>
+            <div class="col-12 mb-4 pt-2">
+                <div class="conversion-card">
+                    <div class="conversion-card-header">
+                          <div class="conversion-card-header-title">
+                            Following are the currency conversion made for this trip
+                          </div>
+                    </div>
+                    <div class="conversion-card-body">
+
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addCurrency" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title section-title" id="exampleModalToggleLabel">Card Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="currency" class="form-label">Currency</label>
+                    <input type="text" class="form-control" id="currency">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="openingBalance" class="form-label">Opening Balance</label>
+                    <input type="text" class="form-control" id="openingBalance">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="rate" class="form-label">Rate</label>
+                    <input type="text" class="form-control" id="rate">
+                </div>
+            </div>
+            <div class="col-md-12 my-4">
+                <button class="btn btn-primary me-2">Add</button>
+                <button class="btn btn-secondary">cancel</button>
+            </div>
+           </div>
+        </div>
+        </div>
+    </div>
+</div>
+    
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/datatable-min.js"></script>
+    <script src="js/select-2.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#showNormalTable').DataTable({
+                responsive: true,
+                "bProcessing": true,
+                "sAutoWidth": false,
+                "bDestroy":true,
+                "sPaginationType": "bootstrap", // full_numbers
+                "iDisplayStart ": 10,
+                "iDisplayLength": 10,
+                "bPaginate": false, //hide pagination
+                "bFilter": false, //hide Search bar
+                "bInfo": false, // hide showing entries 
+            });
+            $('.basic-single').select2({
+                minimumResultsForSearch: -1,
+                dropdownCssClass: "basic-single",
+			});
+            $('#startDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days')
+            });
+            $('#endDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment()
+            });
+            $('#conversionDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days')
+            });
+            $('input[type="radio"]').click(function () {
+                var inputValue = $(this).attr("value");
+                if (inputValue === "curConverter") {
+                   $(".curConverterOther").hide();
+                   $(".curConverter").show();
+                   $('.btnCurConverterOther').css("opacity", "0.5");
+                   $('.btnCurConverter').css("opacity", "1");
+                } else {
+                   $(".curConverter").hide();
+                   $(".curConverterOther").show();
+                   $('.btnCurConverterOther').css("opacity", "1");
+                   $('.btnCurConverter').css("opacity", "0.5");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe-12</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatable-header.css">
+    <link rel="stylesheet" href="css/jquery-datatable.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/select-2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <main class="px-2">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center main-header">
+            <h3 class="section-title">Voucher Approvals</h3>
+            <a class="icon-bars ms-auto" role="button" id="toggle"><img src="images/svg/menu-bar.svg" alt="menu"></a>
+        </div>
+        <div class="search-reset-box mb-5" style="display: none;">
+            <div class="align-items-center d-flex gap-lg-2 gap-md-1 gap-xl-5 justify-content-between flex-md-row flex-column w-100">
+                <div class="mb-3 w-30">
+                    <label for="reportNo" class="form-label">Report No.</label>
+                    <input type="text" class="form-control" id="reportNo">
+                </div>
+                <span class="w-5 text-center">OR</span>
+                <div class="mb-3 w-30">
+                    <label for="status" class="form-label">Employee ID</label>
+                    <input type="text" class="form-control" id="employeeID">
+                </div>
+                <span class="w-5 text-center">OR</span>
+                <div class="mb-3 w-30">
+                    <label for="status" class="form-label">Status</label>
+                    <div class="single-select">
+                        <select class="form-select basic-single" style="width: 100%">
+                          <option selected>Status</option>
+                          <option value="Status 1">Status 1</option>
+                          <option value="Status 2">Status 2</option>
+                          <option value="Status 3">Status 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="align-items-center d-flex gap-lg-2 gap-md-1 gap-xl-5 justify-content-between flex-md-row flex-column w-100">
+                <div class="mb-3 w-30">
+                    <label for="fromDate" class="form-label">From Date</label>
+                    <input type="date" class="form-control" id="fromDate">
+                </div>
+                <span class="w-5 text-center">OR</span>
+                <div class="mb-3 w-30">
+                    <label for="toDate" class="form-label">To Date</label>
+                    <input type="date" class="form-control" id="toDate">
+                </div>
+                <span class="w-5 text-center">OR</span>
+                <div class="mb-3 w-30">
+                    <div class="align-items-end g-lg-2 g-md-1 row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="fromDate" class="form-label">From Date</label>
+                                <input type="text" class="form-control" id="fromDate">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-select mb-3">
+                                <select class="form-select basic-single" style="width: 100%;">
+                                  <option selected>Status</option>
+                                  <option value="Status 1">Status 1</option>
+                                  <option value="Status 2">Status 2</option>
+                                  <option value="Status 3">Status 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center py-2">
+               <button class="btn btn-primary me-2">Search</button>
+               <button class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <div class="excel_datatable mb-4">
+                <table id="example" class="display" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input class="form-check-input custome-size" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </th>
+                            <th>Claim No.</th>
+                            <th>Submission Date</th>
+                            <th>Category</th>
+                            <th>Claim Period</th>
+                            <th>Employee Name (Grade)</th>
+                            <th>Total Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>200</td>
+                            <td> <span class="badge badge-primary">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>1500</td>
+                            <td> <span class="badge badge-warning">Pending</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>1000</td>
+                            <td> <span class="badge badge-danger">Rejected</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>55000</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>32190</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>123</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>500</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>4759</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>150</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>200</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>200</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>200</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td class="roport-no">242566</td>
+                            <td>26 Aug 2022</td>
+                            <td>Conveyance</td>
+                            <td>01 Aug 2022 - 05 Aug 2022</td>
+                            <td>MS. Rajvee Gangar ( B1 )</td>
+                            <td>200</td>
+                            <td> <span class="badge badge-success">Approved</span> </td>
+                            <td>
+                                <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mb-5">
+            <button class="btn btn-primary">Approve</button>
+        </div>
+       </div>
+   </main>
+
+    
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/datatable-min.js"></script>
+    <script src="js/select-2.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function(){
+              $(".search-reset-box").toggle();
+            });
+            var table = $('#example').DataTable({
+                responsive: true,
+                lengthMenu: [
+                    [10, 20, 30, 40, -1],
+                    [10, 20, 30, 40, 'All'],
+               ],
+               language: {
+                oPaginate: {
+                sNext: '<i class="fas fa-angle-double-right"></i>',
+                sPrevious: '<i class="fas fa-angle-double-left"></i>',
+                sFirst: '<i class="fas fa-angle-double-right"></i>',
+                sLast: '<i class="fas fa-angle-double-left"></i>'
+                }
+   } 
+            });
+            $('.basic-single').select2({
+                minimumResultsForSearch: -1,
+                dropdownCssClass: "basic-single",
+			});
+        });
+    </script>
+</body>
+</html>

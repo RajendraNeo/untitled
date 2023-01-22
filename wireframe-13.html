@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe-13</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatable-header.css">
+    <link rel="stylesheet" href="css/jquery-datatable.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/select-2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+   <div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center main-header">
+        <h3 class="section-title">Voucher Report Details</h3>
+    </div>
+    <div class="accordion mb-5" id="expenseDetails">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#empDetails">Employee Details</button>									
+            </h2>
+            <div id="empDetails" class="accordion-collapse collapse show" data-bs-parent="#expenseDetails">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Employee ID</h6>
+                                <p class="emp-subtitle">abuzar_q2t</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Email</h6>
+                                <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Employee Name</h6>
+                                <p class="emp-subtitle">Mr. Abuzar Khan</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Phone No.</h6>
+                                <p class="emp-subtitle">7208593361</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Grade</h6>
+                                <p class="emp-subtitle">B1</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Travel Request No.</h6>
+                                <p class="emp-subtitle">NA</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <h6 class="emp-title">Cost Center</h6>
+                            <p class="emp-subtitle">NA / NA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#claimDetails">Claim Details</button>
+            </h2>
+            <div id="claimDetails" class="accordion-collapse collapse show" data-bs-parent="#expenseDetails">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Employee ID</h6>
+                                <p class="emp-subtitle">abuzar_q2t</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="emp-title">Email</h6>
+                                <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Email</h6>
+                                <p class="emp-subtitle">Abuzar.khan@quest2travel.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Employee Name</h6>
+                                <p class="emp-subtitle">Mr. Abuzar Khan</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="emp-title">Phone No.</h6>
+                                <p class="emp-subtitle">7208593361</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Phone No.</h6>
+                                <p class="emp-subtitle">7208593361</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Grade</h6>
+                                <p class="emp-subtitle">B1</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="emp-title">Travel Request No.</h6>
+                                <p class="emp-subtitle">NA</p>
+                            </div>
+                            <div class="mb-sm-0 mb-3">
+                                <label for="postingDate" class="form-label">Posting Date</label>
+                            <div class="d-flex align-items-center">
+                                <input type="text" class="form-control" id="postingDate" value="07/01/2023">
+                                <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <h6 class="emp-title">Cost Center</h6>
+                                <p class="emp-subtitle">NA / NA</p>
+                            </div>
+                            <div>
+                                <h6 class="emp-title">Travel Request No.</h6>
+                                <p class="emp-subtitle">NA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <div class="excel_datatable mb-4">
+            <table id="showNormalTable" class="display" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </th>
+                        <th>Category</th>
+                        <th>Sub-Category</th>
+                        <th>Expenditure Date</th>
+                        <th>Purpose</th>
+                        <th>Amount Expensed</th>
+                        <th>Approved Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </td>
+                        <td>Conveyance</td>
+                        <td>Fuel Vehicle</td>
+                        <td>24 Oct 2022 </td>
+                        <td>Testing</td>
+                        <td>1,500</td>
+                        <td><input type="text" class="form-control" placeholder="1,500"></td>
+                        <td>
+                            <div class="d-flex">
+                                <button class="btn btn-with-icon me-2"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                <button class="btn btn-with-icon me-2 text-white"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-with-icon me-2 text-white"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </td>
+                        <td>Conveyance</td>
+                        <td>Local Conveyance</td>
+                        <td>25 Oct 2022 </td>
+                        <td>Test</td>
+                        <td>80</td>
+                        <td><input type="text" placeholder="80" class="form-control"></td>
+                        <td>
+                            <div class="d-flex">
+                                <button class="btn btn-with-icon me-2"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                <button class="btn btn-with-icon me-2 text-white"><i class="far fa-edit"></i></button>
+                                <button class="btn btn-with-icon me-2 text-white"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex align-items-center">
+                <h5 class="total-amount mb-0 me-4">Total Amount : <span>2,33,532</span></h5>
+                <h5 class="total-amount mb-0">Total Amount : <span>2,33,532</span></h5>
+            </div>
+            <p class="authorization mb-0">Your authorization request will be sent to <span>Mrs. Vrushali Pagrut</span></p>
+            <div class="mb-5 mt-4">
+                <button class="btn btn-primary mb-sm-0 mb-3">submit</button>
+                <button class="btn btn-primary mb-sm-0 mb-3 mx-0 mx-sm-2">Reconsider</button>
+                <button class="btn btn-secondary mb-sm-0 mb-3">Back</button>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/datatable-min.js"></script>
+    <script src="js/select-2.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#showNormalTable').DataTable({
+                responsive: true,
+                "bProcessing": true,
+                "sAutoWidth": false,
+                "bDestroy":true,
+                "sPaginationType": "bootstrap", // full_numbers
+                "iDisplayStart ": 10,
+                "iDisplayLength": 10,
+                "bPaginate": false, //hide pagination
+                "bFilter": false, //hide Search bar
+                "bInfo": false, // hide showing entries 
+            });
+            $('.basic-single').select2({
+                minimumResultsForSearch: -1,
+                dropdownCssClass: "basic-single",
+			});
+            $('#postingDate').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days'), 
+            });
+        });
+    </script>
+</body>
+</html>

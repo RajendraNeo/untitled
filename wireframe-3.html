@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe-3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatable-header.css">
+    <link rel="stylesheet" href="css/jquery-datatable.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/select-2.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <main class="px-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center main-header flex-wrap">
+                <h3 class="section-title">Travel Expense Claim</h3>
+                <div>
+                    <button type="button" class="btn btn-secondary" id="createTrip">Create Trip</button>
+                    <a class="icon-bars" role="button" id="toggle"><img src="images/svg/menu-bar.svg" alt="menu"></a>
+                </div>
+            </div>
+            <div class="createTrip" style="display: none;">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="form-check form-check-inline custom-checkbox me-2 active">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="domestic" checked/>
+                            <label class="form-check-label" for="domestic"> Domestic </label>
+                        </div>
+                          
+                        <div class="form-check form-check-inline custom-checkbox">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="international"/>
+                        <label class="form-check-label" for="international"> International </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="expenseTitle" class="form-label">Expense Title</label>
+                                    <input type="text" class="form-control" id="expenseTitle">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="country" class="form-label">Country</label>
+                                    <div class="single-select">
+                                        <select class="form-select basic-single" style="width: 100%">
+                                          <option selected>India</option>
+                                          <option value="Status 1">USA</option>
+                                          <option value="Status 2">UK</option>
+                                          <option value="Status 3">UAE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="startCity" class="form-label">Start City</label>
+                                    <input type="text" class="form-control" id="startCity">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="destinationCity" class="form-label">Destination City</label>
+                                    <input type="text" class="form-control" id="destinationCity">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="expenseFrom" class="form-label">Expense From</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control" id="expenseFrom" value="07/01/2023">
+                                        <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="expenseTo" class="form-label">Expense To</label>
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control cursor-pointer" id="expenseTo" value="19/01/2024">
+                                        <img src="images/svg/Calendar Icon.svg" alt="icon" class="dp-calender-icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="purposeVisit" class="form-label">Purpose of Visit</label>
+                                    <input type="text" class="form-control" id="purposeVisit">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-12">
+                                <div class="mb-3">
+                                    <label for="summaryVisit" class="form-label">Summary of Visit</label>
+                                    <input type="text" class="form-control" id="summaryVisit">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-5 mt-4">
+                            <button type="button" class="btn btn-primary">Create</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-reset-box mb-5" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="mb-3">
+                            <label for="requestNo" class="form-label">Request No.</label>
+                            <input type="text" class="form-control" id="requestNo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="mb-3">
+                            <label for="destinationCity" class="form-label">Destination City</label>
+                            <input type="text" class="form-control" id="destinationCity">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <div class="single-select">
+                            <select class="form-select basic-single" style="width: 100%">
+                              <option selected>Status</option>
+                              <option value="Status 1">Status 1</option>
+                              <option value="Status 2">Status 2</option>
+                              <option value="Status 3">Status 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center flex-wrap btn-search-reset">
+                    <button type="button" class="btn btn-primary search">Search</button>
+                    <button type="button" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+            <div class="mb-5 table-responsive">
+                <div class="excel_datatable">
+                    <table id="example" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Report No.</th>
+                                <th>Expense Type</th>
+                                <th>Title</th>
+                                <th>Journey</th>
+                                <th>Expense From</th>
+                                <th>Expense To</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr>
+                                <td class="roport-no">265478</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265479</td>
+                                <td>Domestic</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265480</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265481</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265482</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265483</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265484</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="roport-no">265485</td>
+                                <td>International</td>
+                                <td>test</td>
+                                <td>Mumbai - Delhi</td>
+                                <td>03 Jan 2023</td>
+                                <td>04 Jan 2023</td>
+                                <td> <span class="badge badge-primary">Fill Expenses</span> </td>
+                                <td>
+                                    <button class="btn btn-with-icon"><img src="images/svg/View Icon.svg" alt="view Icon"></button>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/datatable-min.js"></script>
+    <script src="js/select-2.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function(){
+              $(".search-reset-box").toggle();
+            });
+            $("#createTrip").click(function(){
+              $(".createTrip").toggle();
+            });
+            $(".custom-checkbox").click(function () {
+              $(".custom-checkbox").removeClass("active");
+              $(this).addClass("active");   
+            });
+            // form-check-input
+            var table = $('#example').DataTable({
+                rowReorder: {
+                   selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                lengthMenu: [
+                    [2, 4, 6, 8, -1],
+                    [2, 4, 6, 8, 'All'],
+               ],
+               language: {
+                    oPaginate: {
+                        sNext: '<i class="fas fa-angle-double-right"></i>',
+                        sPrevious: '<i class="fas fa-angle-double-left"></i>',
+                        sFirst: '<i class="fas fa-angle-double-right"></i>',
+                        sLast: '<i class="fas fa-angle-double-left"></i>'
+                    }
+                } 
+            });
+            $('.basic-single').select2({
+                minimumResultsForSearch: -1,
+                dropdownCssClass: "basic-single",
+			});
+            $('#expenseFrom').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment().subtract(6, 'days')
+            });
+            $('#expenseTo').daterangepicker({
+                singleDatePicker: true,
+                startDate: moment()
+            });
+        });
+    </script>
+</body>
+</html>
